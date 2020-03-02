@@ -1,5 +1,7 @@
 const express = require('express');
 const fs = require('fs');
+var bodyParser = require('body-parser');
+//pry = require('pryjs')
 
 //q3 - brown - [420,97],[370,97],[370,127]
 //q3 - blue - [420,97],[400,97],[395,123]
@@ -15,6 +17,7 @@ const fs = require('fs');
 const app = express();
 app.use(express.static("public"));
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true })); 
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
@@ -22,7 +25,10 @@ app.get('/', function (req, res) {
 
 app.post('/', function (request, response) {
     console.log(request.body);
-    console.log(request.body.email);
+    //eval(pry.it);
+
+    response.setHeader('Content-Type', 'application/json');
+    response.end(JSON.stringify({ status: true }));
 })
 
 // app.get('/', (req,res) => res.send("Hello there"));
