@@ -1,0 +1,965 @@
+%!Adobe-FontList 1.20
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/AdobeFnt21.lst
+FileLength:25371
+FileModTime:603901985
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Caecilia-Bold
+FamilyName:PMN Caecilia
+StyleName:75 Bold
+MenuName:Caecilia Light
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:PMN Caecilia 75 Bold
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/CaeciBol
+DataFormat:POSTResource
+UsesStandardEncoding:yes
+isCFF:no
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:37328
+FileModTime:505912190
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7713
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Heavy
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7713
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Italic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7713
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7713
+MacStyle:3
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Italic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7714
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7714
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Heavy
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:5093
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:5093
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7718
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Light
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7711
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Bold
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7711
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7711
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7711
+MacStyle:3
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-Bold
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7715
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7715
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7712
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7712
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalic
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7716
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13581
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13581
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13581
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13581
+MacStyle:3
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13585
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13585
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13586
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13582
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13582
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-RomanOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13583
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13583
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-ItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13583
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13583
+MacStyle:3
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-ItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13584
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13584
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13587
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13587
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicOsF
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:13588
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7781
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7781
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7781
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7781
+MacStyle:3
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-LightItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7782
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7782
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7785
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7785
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-BoldItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7786
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-RomanSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7783
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavySC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7783
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-ItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7783
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7783
+MacStyle:3
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavySC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7787
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7787
+MacStyle:2
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-ItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7784
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7784
+MacStyle:1
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Caecilia-HeavyItalicSC
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Caecilia
+ResourceID:7788
+MacStyle:0
+FileLength:219521
+FileModTime:505918480
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Book
+FamilyName:Avenir
+StyleName:Book
+MenuName:Avenir Book
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Book
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:72
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Book
+NameArray:0,Mac,4,Avenir Book
+NameArray:0,Win,1,Avenir Book
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-BookOblique
+FamilyName:Avenir
+StyleName:Book Oblique
+MenuName:Avenir Book
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir Book Oblique
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:388
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Book Oblique
+NameArray:0,Mac,4,Avenir Book Oblique
+NameArray:0,Win,1,Avenir Book
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Black
+FamilyName:Avenir
+StyleName:Black
+MenuName:Avenir Black
+StyleBits:2
+WeightClass:800
+WidthClass:5
+AngleClass:0
+FullName:Avenir Black
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:704
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Black
+NameArray:0,Mac,4,Avenir Black
+NameArray:0,Win,1,Avenir Black
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-BlackOblique
+FamilyName:Avenir
+StyleName:Black Oblique
+MenuName:Avenir Black Oblique
+StyleBits:3
+WeightClass:800
+WidthClass:5
+AngleClass:1
+FullName:Avenir Black Oblique
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:1004
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Black Oblique
+NameArray:0,Mac,4,Avenir Black Oblique
+NameArray:0,Win,1,Avenir Black Oblique
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Heavy
+FamilyName:Avenir
+StyleName:Heavy
+MenuName:Avenir Heavy
+StyleBits:2
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Avenir Heavy
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:1304
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Heavy
+NameArray:0,Mac,4,Avenir Heavy
+NameArray:0,Win,1,Avenir Heavy
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-HeavyOblique
+FamilyName:Avenir
+StyleName:Heavy Oblique
+MenuName:Avenir Heavy
+StyleBits:3
+WeightClass:900
+WidthClass:5
+AngleClass:1
+FullName:Avenir Heavy Oblique
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:1588
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Heavy Oblique
+NameArray:0,Mac,4,Avenir Heavy Oblique
+NameArray:0,Win,1,Avenir Heavy
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Light
+FamilyName:Avenir
+StyleName:Light
+MenuName:Avenir Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Avenir Light
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:1904
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Light
+NameArray:0,Mac,4,Avenir Light
+NameArray:0,Win,1,Avenir Light
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-LightOblique
+FamilyName:Avenir
+StyleName:Light Oblique
+MenuName:Avenir Light
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Avenir Light Oblique
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:2220
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Light Oblique
+NameArray:0,Mac,4,Avenir Light Oblique
+NameArray:0,Win,1,Avenir Light
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Medium
+FamilyName:Avenir
+StyleName:Medium
+MenuName:Avenir Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Avenir Medium
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:2536
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Medium
+NameArray:0,Mac,4,Avenir Medium
+NameArray:0,Win,1,Avenir Medium
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-MediumOblique
+FamilyName:Avenir
+StyleName:Medium Oblique
+MenuName:Avenir Medium
+StyleBits:1
+WeightClass:500
+WidthClass:5
+AngleClass:1
+FullName:Avenir Medium Oblique
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:2836
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Medium Oblique
+NameArray:0,Mac,4,Avenir Medium Oblique
+NameArray:0,Win,1,Avenir Medium
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Oblique
+FamilyName:Avenir
+StyleName:Oblique
+MenuName:Avenir
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir Oblique
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:3152
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Oblique
+NameArray:0,Mac,4,Avenir Oblique
+NameArray:0,Win,1,Avenir
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Roman
+FamilyName:Avenir
+StyleName:Roman
+MenuName:Avenir
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Roman
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/Avenir.ttc
+TTCOffset:3468
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1639536
+FileModTime:603901985
+NameArray:0,Mac,18,Avenir Roman
+NameArray:0,Mac,4,Avenir Roman
+NameArray:0,Win,1,Avenir
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Caecilia-Heavy
+FamilyName:PMN Caecilia
+StyleName:85 Heavy
+MenuName:Caecilia Roman
+StyleBits:2
+WeightClass:850
+WidthClass:5
+AngleClass:0
+FullName:PMN Caecilia 85 Heavy
+WritingScript:Roman
+OutlineFileName:/Users/Faye/Desktop/FREELANCE/ACCA/ACCA PI Reports/GECS Thematics/Building-the-next-gen-CFOs ICONS Folder/Document fonts/CaeciHea
+DataFormat:POSTResource
+UsesStandardEncoding:yes
+isCFF:no
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:38279
+FileModTime:505912166
+DesignSize:-1
+%EndFont
+
