@@ -93,7 +93,7 @@ survey
         document
             .querySelector('#surveyResult')
             .textContent = "Result JSON:\n" + JSON.stringify(result.data, null, 3);
-        post('/', JSON.stringify(result.data, null, 3));
+        post('/', result.data);
     });
 
 survey.showTitle = false;
