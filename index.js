@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const HummusRecipe = require('hummus-recipe');
 var bodyParser = require('body-parser');
-var jsonQ=require("jsonq");
+// var jsonQ=require("jsonq");
 pry = require('pryjs');
 
 //q3 - brown - [420,97],[370,97],[370,127]
@@ -18,26 +18,29 @@ pry = require('pryjs');
 
 const app = express();
 app.use(express.static("public"));
-app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 })
 
 app.post('/', function (request, response) {
-    console.log(request.body);
-
+    console.log(JSON.stringify(request.body));
     console.log(request.body.Name);
-    console.log(request.body.priorities.value);
+    var res = JSON.stringify(request.body);
+    console.log(request.body.priorities);
+
+    // console.log(jsonData.Name);
+    // console.log(jsonData.priorities);
 
     // console.log(jsonQ.sort(request.body.priorities.value));
     // eval(pry.it);
-    createPdf();
+    // createPdf();
 
 
     // response.setHeader('Content-Type', 'application/json');
-    // response.end(JSON.stringify({ status: true }));
+    response.send(JSON.stringify({ status: true }));
 })
 
 // app.get('/', (req,res) => res.send("Hello there"));

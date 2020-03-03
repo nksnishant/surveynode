@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Example of creating an alternative custom navigation, Angular2 Survey Library Example</title>
+        <title>ACCA Future Leaders Survey</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://npmcdn.com/zone.js/dist/zone-evergreen"></script>
-        <script src="https://npmcdn.com/core-js@2.6.5/client/shim.min.js"></script>
-        <script src="https://npmcdn.com/rxjs@5.0.0-beta.6/bundles/Rx.umd.js"></script>
-        <script src="https://npmcdn.com/@angular/core@2.0.0-rc.5/bundles/core.umd.js"></script>
-        <script src="https://npmcdn.com/@angular/common@2.0.0-rc.5/bundles/common.umd.js"></script>
-        <script src="https://npmcdn.com/@angular/compiler@2.0.0-rc.5/bundles/compiler.umd.js"></script>
-        <script src="https://npmcdn.com/@angular/platform-browser@2.0.0-rc.5/bundles/platform-browser.umd.js"></script>
-        <script src="https://npmcdn.com/@angular/platform-browser-dynamic@2.0.0-rc.5/bundles/platform-browser-dynamic.umd.js"></script>
-        <script src="https://surveyjs.azureedge.net/1.1.29/survey.angular.js"></script>
-        <link href="https://surveyjs.azureedge.net/1.1.29/modern.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./css/styles.css">
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.5.12/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.5.12/modern.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css">
 
     </head>
     <body>
-        <ng-app></ng-app>
+        <div id="surveyElement" style="display:inline-block;width:100%;"></div>
         <div id="surveyResult"></div>
 
         <script type="text/javascript" src="./scripts/survey.js"></script>
