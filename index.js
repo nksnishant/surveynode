@@ -27,9 +27,8 @@ app.get('/', function (req, res) {
 
 app.post('/', function (request, response) {
     console.log(request.body);
-
-    console.log(request.body.Name);
-    console.log(request.body.priorities.value);
+    data = JSON.parse(request.body.params);
+    console.log(data.Name);
 
     // console.log(jsonQ.sort(request.body.priorities.value));
     // eval(pry.it);

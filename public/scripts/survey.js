@@ -571,7 +571,7 @@ function post(path, params, method='post') {
   form.method = method;
   form.action = path;
 
-  for (const key in params) {
+  /*for (const key in params) {
     if (params.hasOwnProperty(key)) {
       const hiddenField = document.createElement('input');
       hiddenField.type = 'hidden';
@@ -580,7 +580,12 @@ function post(path, params, method='post') {
 
       form.appendChild(hiddenField);
     }
-  }
+  }*/
+  const hiddenField = document.createElement('input');
+  hiddenField.type = 'hidden';
+  hiddenField.name = 'params';
+  hiddenField.value = JSON.stringify(params, null, 3);
+  form.appendChild(hiddenField);
 
   document.body.appendChild(form);
   form.submit();
