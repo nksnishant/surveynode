@@ -114,7 +114,7 @@ var json = {
               text: "Harmonization of accounting and business Standards"
             },
             {
-              value: "finance",
+              value: "financeTechnology",
               text: "Finance technology/systems upgrade"
             },
             {
@@ -134,7 +134,7 @@ var json = {
               text: "Managing generational aspirations and expectations"
             },
             {
-              value: "others",
+              value: "otherPriorities",
               text: "Others"
             }
           ]
@@ -169,7 +169,7 @@ var json = {
               text: "Adoption of latest technology & technology-based approaches"
             },
             {
-              value: "capabilities",
+              value: "advisoryCapabilities",
               text: "Enhanced advisory capabilities"
             },
             {
@@ -185,7 +185,7 @@ var json = {
               text: "Active collaboration and partnership with and outside the business"
             },
             {
-              value: "capabilities",
+              value: "peopleCapabilities",
               text: "People capabilities and team structure"
             },
             {
@@ -193,7 +193,7 @@ var json = {
               text: "Data mining and analytics"
             },
             {
-              value: "others",
+              value: "financeTransOthers",
               text: "Others"
             }
           ]
@@ -334,15 +334,15 @@ var json = {
           name: "compAndSkills",
           title: "What competencies and skills would be most critical for job success of senior Finance professionals in 2030 and beyond?",
           columns: [{
-              value: 1,
+              value: "Not Critical",
               text: "Not Critical"
             },
             {
-              value: 2,
+              value: "Somewhat Critical",
               text: "Somewhat Critical"
             },
             {
-              value: 3,
+              value: "Highly Critical",
               text: "Highly Critical"
             }
           ],
@@ -367,7 +367,7 @@ var json = {
               text: "Emotional Intelligence: The ability to identify your own emotions and those of others, harness and apply them to tasks, and regulate and manage them."
             },
             {
-              value: "Governance, Risk and Ethics",
+              value: "Vision",
               text: "Vision: The ability to anticipate future trends accurately by extrapolating existing trends and facts, and filling the gaps by thinking innovatively."
             },
             {
@@ -407,7 +407,7 @@ var json = {
         },
         {
           type: "checkbox",
-          name: "financeSkill",
+          name: "financeSkillGaps",
           title: "What talent and skill gaps do you foresee in Finance function in the coming years? How critical are these for future success?",
           hasSelectAll: true,
           //isRequired: true,
@@ -471,13 +471,13 @@ survey
         type: 'POST',
         url: '/',
         data: JSON.stringify(result.data, null, 3),
-        success: function(data) { alert('data: ' + data); },
+        success: function(data) { alert('data: ' + JSON.stringify(data)); },
         contentType: "application/json",
         dataType: 'json'
     });
-    document
-      .querySelector('#surveyResult')
-      .textContent = "Result JSON:\n" + JSON.stringify(result.data, null, 3);
+    // document
+    //   .querySelector('#surveyResult')
+    //   .textContent = "Result JSON:\n" + JSON.stringify(result.data, null, 3);
   });
 
 $("#surveyElement").Survey({
