@@ -431,18 +431,47 @@ window.survey = new Survey.Model(json);
 survey
   .onComplete
   .add(function(result) {
+    console.log(window.location.pathname);
     $.ajax({
       type: 'POST',
       url: '/',
       data: JSON.stringify(result.data, null, 3),
-      success: function(data) {
-        console.log("Success Response");
-        var blob=new Blob([data]);
-        window.open(URL.createObjectURL(blob));
-        // alert('data: ' + data);
-      },
       contentType: "application/json",
-      dataType: 'json'
+      xhrFields: {
+        responseType: 'blob'
+      },
+      success: function(data) {
+        var filename = "SurveyResults.pdf";
+        var linkelem = document.createElement('a');
+        try {
+          var blob = new Blob([data], {
+            type: 'application/octet-stream'
+          });
+
+          if (typeof window.navigator.msSaveBlob !== 'undefined') {
+            //   IE workaround for "HTML7007: One or more blob URLs were revoked by closing the blob for which they were created. These URLs will no longer resolve as the data backing the URL has been freed."
+            window.navigator.msSaveBlob(blob, filename);
+          } else {
+            var URL = window.URL || window.webkitURL;
+            var downloadUrl = URL.createObjectURL(blob);
+            // use HTML5 a[download] attribute to specify filename
+            var a = document.createElement("a");
+
+            // safari doesn't support this yet
+            if (typeof a.download === 'undefined') {
+              window.location = downloadUrl;
+            } else {
+              a.href = downloadUrl;
+              a.download = filename;
+              document.body.appendChild(a);
+              a.target = "_blank";
+              a.click();
+            }
+          }
+        } catch (ex) {
+          console.log(ex);
+        }
+      },
     });
     // document
     //   .querySelector('#surveyResult')
