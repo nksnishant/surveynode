@@ -2,6 +2,8 @@ Survey
   .StylesManager
   .applyTheme("modern");
 
+var debug = false;
+
 var json = {
   pages: [{
       title: "How is your organization gearing up? Take the survey now and get a copy of the study report.",
@@ -11,7 +13,7 @@ var json = {
           type: "dropdown",
           name: "industry",
           title: "Industry/Sector:",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           //hasNone: true,
           hasOther: true,
           colCount: 4,
@@ -35,7 +37,7 @@ var json = {
           type: "dropdown",
           name: "annualTurnover",
           title: "Annual turnover in Rupees Crores(in case of MNC, please specify for India unit only)",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           hasNone: true,
           colCount: 4,
           choices: [
@@ -49,7 +51,7 @@ var json = {
           type: "dropdown",
           name: "totalEmployees",
           title: "Number of employees in my organization(in case of MNC, please specify for India unit only)",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           hasNone: true,
           colCount: 4,
           choices: [
@@ -64,7 +66,7 @@ var json = {
           type: "radiogroup",
           name: "organizationLevel",
           title: "My level within the Organization:",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           colCount: 2,
           choices: [
             "CFO",
@@ -77,7 +79,7 @@ var json = {
           name: "interest",
           title: "I am interested in",
           hasSelectAll: true,
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           //hasOther: true,
           colCount: 2,
           choices: [
@@ -93,7 +95,7 @@ var json = {
       questions: [{
           type: "sortablelist",
           name: "priorities",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           "validators": [{
             "type": "expression",
             "text": "Please select at least three responses.",
@@ -141,7 +143,7 @@ var json = {
         {
           type: "sortablelist",
           name: "financeTrans",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           "validators": [{
             "type": "expression",
             "text": "Please select at least three responses.",
@@ -185,7 +187,7 @@ var json = {
         {
           type: "sortablelist",
           name: "externalFactors",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           "validators": [{
             "type": "expression",
             "text": "Please select at least three responses.",
@@ -230,7 +232,7 @@ var json = {
         {
           type: "sortablelist",
           name: "financeAspects",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           "validators": [{
             "type": "expression",
             "text": "Please select at least three responses.",
@@ -272,7 +274,7 @@ var json = {
           type: "radiogroup",
           name: "financePrep",
           title: "How prepared are you or is your organization's Finance function for enabling this transformation?",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           colCount: 2,
           choices: [
             "Very prepared, have a structured roadmap",
@@ -287,7 +289,7 @@ var json = {
       questions: [{
           type: "matrix",
           name: "compAndSkills",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           title: "What competencies and skills would be most critical for job success of senior Finance professionals in 2030 and beyond?",
           columns: [{
               value: "Not Critical",
@@ -341,7 +343,7 @@ var json = {
           name: "financeSkills",
           title: "What skills would you place emphasis on building/developing, at each of the following stages, for successful Finance professionals of the future?",
           hasSelectAll: true,
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           hasOther: true,
           colCount: 2,
           choices: [
@@ -366,7 +368,7 @@ var json = {
           name: "financeSkillGaps",
           title: "What talent and skill gaps do you foresee in Finance function in the coming years? How critical are these for future success?",
           hasSelectAll: true,
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           hasOther: true,
           colCount: 2,
           choices: [
@@ -387,25 +389,25 @@ var json = {
           type: "text",
           name: "Name",
           title: "Name",
-          isRequired: true
+          isRequired: debug == undefined ? true : debug
         },
         {
           type: "text",
           name: "Organization",
           title: "Organization",
-          isRequired: true
+          isRequired: debug == undefined ? true : debug
         },
         {
           type: "text",
           name: "Title",
           title: "Title",
-          isRequired: true
+          isRequired: debug == undefined ? true : debug
         },
         {
           type: "text",
           name: "Phone",
           title: "Phone",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           validators: [{
             type: "numeric",
             minlength: 10,
@@ -416,7 +418,7 @@ var json = {
           type: "text",
           name: "Email",
           title: "Email",
-          isRequired: true,
+          isRequired: debug == undefined ? true : debug,
           validators: [{
             type: "email"
           }]
