@@ -480,6 +480,17 @@ survey
     //   .textContent = "Result JSON:\n" + JSON.stringify(result.data, null, 3);
   });
 
+  function doOnCurrentPageChanged(survey) {
+    if(!survey.isFirstPage){
+      $("#header").hide();
+    }else{
+      $("#header").show();
+    }
+  }
+
 $("#surveyElement").Survey({
-  model: survey
+  model: survey,onCurrentPageChanged: doOnCurrentPageChanged
 });
+
+doOnCurrentPageChanged(survey);
+survey.debug = true;
