@@ -3,7 +3,6 @@ Survey
   .applyTheme("modern");
 
 var json = {
-  title: "Survey.",
   pages: [{
       title: "How is your organization gearing up? Take the survey now and get a copy of the study report.",
       questions: [
@@ -12,7 +11,7 @@ var json = {
           type: "dropdown",
           name: "industry",
           title: "Industry/Sector:",
-          //isRequired: true,
+          isRequired: true,
           //hasNone: true,
           hasOther: true,
           colCount: 4,
@@ -36,7 +35,7 @@ var json = {
           type: "dropdown",
           name: "annualTurnover",
           title: "Annual turnover in Rupees Crores(in case of MNC, please specify for India unit only)",
-          //isRequired: true,
+          isRequired: true,
           hasNone: true,
           colCount: 4,
           choices: [
@@ -49,8 +48,8 @@ var json = {
         {
           type: "dropdown",
           name: "totalEmployees",
-          title: "Number of employees in my organization(in case of MNC, please specify for India unit only",
-          //isRequired: true,
+          title: "Number of employees in my organization(in case of MNC, please specify for India unit only)",
+          isRequired: true,
           hasNone: true,
           colCount: 4,
           choices: [
@@ -65,43 +64,43 @@ var json = {
           type: "radiogroup",
           name: "organizationLevel",
           title: "My level within the Organization:",
-          //isRequired: true,
+          isRequired: true,
           colCount: 2,
           choices: [
             "CFO",
             "Senior Finance Professional(Finance Head,VP,Director and above)",
             "CHRO or Senior HR Professional"
           ]
-        }
+        },
+        {
+          type: "checkbox",
+          name: "interest",
+          title: "I am interested in",
+          hasSelectAll: true,
+          isRequired: true,
+          //hasOther: true,
+          colCount: 2,
+          choices: [
+            "What the Finance function needs to gear up for 2030 and beyond",
+            "How to be the Next-Gen CFO"
+          ]
+        },
       ]
-    }, {
+    },
+
+    {
 
       questions: [{
-          type: "matrix",
+          type: "sortablelist",
           name: "priorities",
+          isRequired: true,
+          "validators": [{
+            "type": "expression",
+            "text": "Please select at least three responses.",
+            "expression": "{priorities.length} >= 3"
+          }],
           title: "What are the key priorities for your organization's finance function over the next few years?",
-          columns: [{
-              value: 1,
-              text: "1"
-            },
-            {
-              value: 2,
-              text: "2"
-            },
-            {
-              value: 3,
-              text: "3"
-            },
-            {
-              value: 4,
-              text: "4"
-            },
-            {
-              value: 5,
-              text: "5"
-            }
-          ],
-          rows: [{
+          choices: [{
               value: "advisory",
               text: "Advising CEO and/or other key stakeholders"
             },
@@ -140,31 +139,16 @@ var json = {
           ]
         },
         {
-          type: "matrix",
+          type: "sortablelist",
           name: "financeTrans",
+          isRequired: true,
+          "validators": [{
+            "type": "expression",
+            "text": "Please select at least three responses.",
+            "expression": "{financeTrans.length} >= 3"
+          }],
           title: "What transformation in Finance function do you foresee over next few years for effectively facilitating and successfully delivering these priorities?",
-          columns: [{
-              value: 1,
-              text: "1"
-            },
-            {
-              value: 2,
-              text: "2"
-            },
-            {
-              value: 3,
-              text: "3"
-            },
-            {
-              value: 4,
-              text: "4"
-            },
-            {
-              value: 5,
-              text: "5"
-            }
-          ],
-          rows: [{
+          choices: [{
               value: "adoption",
               text: "Adoption of latest technology & technology-based approaches"
             },
@@ -198,33 +182,17 @@ var json = {
             }
           ]
         },
-
         {
-          type: "matrix",
+          type: "sortablelist",
           name: "externalFactors",
+          isRequired: true,
+          "validators": [{
+            "type": "expression",
+            "text": "Please select at least three responses.",
+            "expression": "{externalFactors.length} >= 3"
+          }],
           title: "What external factors will have the most influence on the transformation aspects?",
-          columns: [{
-              value: 1,
-              text: "1"
-            },
-            {
-              value: 2,
-              text: "2"
-            },
-            {
-              value: 3,
-              text: "3"
-            },
-            {
-              value: 4,
-              text: "4"
-            },
-            {
-              value: 5,
-              text: "5"
-            }
-          ],
-          rows: [{
+          choices: [{
               value: "development",
               text: "Development of intelligent automated accounting systems and new analytical  methodologies"
             },
@@ -258,32 +226,18 @@ var json = {
             }
           ]
         },
+
         {
-          type: "matrix",
+          type: "sortablelist",
           name: "financeAspects",
+          isRequired: true,
+          "validators": [{
+            "type": "expression",
+            "text": "Please select at least three responses.",
+            "expression": "{financeAspects.length} >= 3"
+          }],
           title: "Which aspects of Finance function would be most impacted by the transformation?",
-          columns: [{
-              value: 1,
-              text: "1"
-            },
-            {
-              value: 2,
-              text: "2"
-            },
-            {
-              value: 3,
-              text: "3"
-            },
-            {
-              value: 4,
-              text: "4"
-            },
-            {
-              value: 5,
-              text: "5"
-            }
-          ],
-          rows: [{
+          choices: [{
               value: "Audit and Assurance",
               text: "Audit and Assurance"
             },
@@ -313,11 +267,12 @@ var json = {
             }
           ]
         },
+
         {
           type: "radiogroup",
           name: "financePrep",
           title: "How prepared are you or is your organization's Finance function for enabling this transformation?",
-          //isRequired: true,
+          isRequired: true,
           colCount: 2,
           choices: [
             "Very prepared, have a structured roadmap",
@@ -332,6 +287,7 @@ var json = {
       questions: [{
           type: "matrix",
           name: "compAndSkills",
+          isRequired: true,
           title: "What competencies and skills would be most critical for job success of senior Finance professionals in 2030 and beyond?",
           columns: [{
               value: "Not Critical",
@@ -385,7 +341,7 @@ var json = {
           name: "financeSkills",
           title: "What skills would you place emphasis on building/developing, at each of the following stages, for successful Finance professionals of the future?",
           hasSelectAll: true,
-          //isRequired: true,
+          isRequired: true,
           hasOther: true,
           colCount: 2,
           choices: [
@@ -410,7 +366,7 @@ var json = {
           name: "financeSkillGaps",
           title: "What talent and skill gaps do you foresee in Finance function in the coming years? How critical are these for future success?",
           hasSelectAll: true,
-          //isRequired: true,
+          isRequired: true,
           hasOther: true,
           colCount: 2,
           choices: [
@@ -449,13 +405,21 @@ var json = {
           type: "text",
           name: "Phone",
           title: "Phone",
-          isRequired: true
+          isRequired: true,
+          validators: [{
+            type: "numeric",
+            minlength: 10,
+            maxlength: 10
+          }]
         },
         {
           type: "text",
           name: "Email",
           title: "Email",
-          isRequired: true
+          isRequired: true,
+          validators: [{
+            type: "email"
+          }]
         }
       ]
     }
@@ -468,12 +432,17 @@ survey
   .onComplete
   .add(function(result) {
     $.ajax({
-        type: 'POST',
-        url: '/',
-        data: JSON.stringify(result.data, null, 3),
-        success: function(data) { alert('data: ' + JSON.stringify(data)); },
-        contentType: "application/json",
-        dataType: 'json'
+      type: 'POST',
+      url: '/',
+      data: JSON.stringify(result.data, null, 3),
+      success: function(data) {
+        console.log("Success Response");
+        var blob=new Blob([data]);
+        window.open(URL.createObjectURL(blob));
+        // alert('data: ' + data);
+      },
+      contentType: "application/json",
+      dataType: 'json'
     });
     // document
     //   .querySelector('#surveyResult')

@@ -4,3 +4,20 @@
 #surveyPrev {
     color: #1ab394;
 }
+
+.sv-page__title {
+  font-size: 1.2em;
+}
+
+#header{
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
+  cursor: default;
+  word-break: break-word;
+}
+
+headerText{
+  font-size: 1em;
+}
