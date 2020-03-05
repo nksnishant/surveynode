@@ -3,6 +3,8 @@ const fs = require('fs');
 const HummusRecipe = require('hummus-recipe');
 const nodemailer = require('nodemailer');
 
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var bodyParser = require('body-parser');
 // pry = require('pryjs');
 
@@ -16,6 +18,26 @@ let transport = nodemailer.createTransport({
 });
 
 const app = express();
+
+var sess = {
+  secret: 'american ninja',
+  cookie: {}
+}
+
+if (app.get('env') === 'production') {
+  app.set('trust proxy', 1) // trust first proxy
+  sess.cookie.secure = true // serve secure cookies
+}
+
+app.use(session({
+  resave: true,
+  saveUninitialized: true,
+  secret: 'american ninja',
+  cookie: {
+    maxAge: 60000
+  }
+}));
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
   extended: true
@@ -24,27 +46,29 @@ app.use(bodyParser.json());
 
 
 app.get('/', function(req, res) {
+  console.log(req.session.id);
   res.sendFile(__dirname + '/index.html');
 })
 
-app.get('/download', function(req, res) {
-  res.sendFile(__dirname + '/success.html');
-})
 
 app.post('/', function(request, response, next) {
   console.log(JSON.stringify(request.body));
+  console.log(request.session.id);
 
+  var outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
   // eval(pry.it);
   // deletePdf();
 
-  createPdf(request);
+  createPdf(request,outputFile);
+
+  sendEmail(request.body.Email,request.body.Name,outputFile);
 
   var filename = "SurveyResults.pdf";
   filename = encodeURIComponent(filename);
   response.setHeader('Content-disposition', 'inline; filename="' + filename + '"');
   response.setHeader('Content-type', 'application/pdf');
 
-  response.sendFile(__dirname + '/output.pdf');
+  response.sendFile(outputFile);
 
 })
 
@@ -63,7 +87,7 @@ function deletePdf() {
 }
 
 //Create the pdf file and store it in output.pdf
-function createPdf(request) {
+function createPdf(request,outputFile) {
   var sortedPriorities = request.body.priorities;
   const kp11 = __dirname + "/assets/images/pngs/" + sortedPriorities[0] + ".png";
   const kp12 = __dirname + "/assets/images/pngs/" + sortedPriorities[1] + ".png";
@@ -79,7 +103,7 @@ function createPdf(request) {
   const rank3 = __dirname + "/assets/images/pngs/Icon3.png";
   const tick = __dirname + "/assets/images/pngs/tick.png";
 
-  const pdfDoc = new HummusRecipe('input.pdf', 'output.pdf');
+  const pdfDoc = new HummusRecipe('input.pdf', outputFile);
   pdfDoc
     // edit 1st page
     .editPage(1)
@@ -425,13 +449,9 @@ function createPdf(request) {
     // end and save
     .endPDF();
 
-
-
-  sendEmail(request.body.Email,request.body.Name);
-
 }
 
-function sendEmail(emailId,name) {
+function sendEmail(emailId,name,outputFilePath) {
   const message = {
     from: 'noreply@acca.com', // Sender address
     to: emailId, // List of recipients
@@ -439,7 +459,7 @@ function sendEmail(emailId,name) {
     html: '<p>Dear ' + name +',<\/p><p>Thank you for completing the follow-up survey to ACCA and SHRM India\'s study on Building the next - gen CFOs. You may refer to the enclosed one - page summary for understanding your response vis - a - vis the study respondents. Our representative will connect with you soon to outline the implications and how other organizations are preparing for the road ahead. <\/p><br>The detailed study report is attached.<br><br>Regards,<br>ACCA',
     attachments: [{
       filename: 'SurveyResults.pdf',
-      path: 'output.pdf'
+      path: outputFilePath
     }]
   };
 
