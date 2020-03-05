@@ -27,32 +27,25 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 })
 
+app.get('/download', function(req, res) {
+  res.sendFile(__dirname + '/success.html');
+})
+
 app.post('/', function(request, response, next) {
   console.log(JSON.stringify(request.body));
 
   // eval(pry.it);
   // deletePdf();
+
   createPdf(request);
 
   var filename = "SurveyResults.pdf";
-  // Be careful of special characters
-
   filename = encodeURIComponent(filename);
-  // Ideally this should strip them
-
   response.setHeader('Content-disposition', 'inline; filename="' + filename + '"');
   response.setHeader('Content-type', 'application/pdf');
-  console.log(response);
 
-  fs.readFile('output.pdf' , function (err,data){
-      response.contentType("application/pdf");
-      response.send(data);
-  });
+  response.sendFile(__dirname + '/output.pdf');
 
-  // response.setHeader('Content-Type', 'application/json');
-  // response.send(JSON.stringify({
-  //   status: true
-  // }));
 })
 
 
@@ -459,8 +452,6 @@ function sendEmail(emailId,name) {
   });
 }
 
-
-
-app.listen(3000, () =>
-  console.log("Server started on port 3000")
-);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
+});

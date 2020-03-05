@@ -15,9 +15,14 @@
   display: block;
   padding: 0.5em 1em 0.5em 1em;
   cursor: default;
-  word-break: break-word;
 }
 
 headerText{
   font-size: 1em;
+  text-align: justify;
+}
+
+p {
+  /* text-align: justify;
+  display: inline; */
 }
