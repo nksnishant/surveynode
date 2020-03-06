@@ -493,4 +493,4 @@ $("#surveyElement").Survey({
 });
 
 doOnCurrentPageChanged(survey);
-survey.debug = true;
+// survey.debug = true;
