@@ -164,7 +164,7 @@ function createPdf(request,outputFile) {
   // 9 - Readiness for Transformation
   var lineDims;
   var readiness = request.body.financePrep;
-  if (request.body.organizationLevel = "CHRO or Senior HR Professional") {
+  if (request.body.organizationLevel == "CHRO or Senior HR Professional") {
     switch (readiness) {
       case "Very prepared, have a structured roadmap": //brown
         lineDims = [
