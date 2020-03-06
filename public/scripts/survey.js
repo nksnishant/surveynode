@@ -2,7 +2,7 @@ Survey
   .StylesManager
   .applyTheme("modern");
 
-var debug = false;
+var debug;
 
 var json = {
   pages: [{
