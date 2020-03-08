@@ -19,14 +19,14 @@ let transport = nodemailer.createTransport({
 
 const app = express();
 
-var sess = {
+const sess = {
   secret: 'american ninja',
   cookie: {}
-}
+};
 
 if (app.get('env') === 'production') {
-  app.set('trust proxy', 1) // trust first proxy
-  sess.cookie.secure = true // serve secure cookies
+  app.set('trust proxy', 1); // trust first proxy
+  sess.cookie.secure = true; // serve secure cookies
 }
 
 app.use(session({
@@ -48,14 +48,14 @@ app.use(bodyParser.json());
 app.get('/', function(req, res) {
   console.log(req.session.id);
   res.sendFile(__dirname + '/index.html');
-})
+});
 
 
 app.post('/', function(request, response, next) {
   console.log(JSON.stringify(request.body));
   console.log(request.session.id);
 
-  var outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
+  const outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
   // eval(pry.it);
   // deletePdf();
 
@@ -70,7 +70,7 @@ app.post('/', function(request, response, next) {
 
   response.sendFile(outputFile);
 
-})
+});
 
 
 function deletePdf() {
@@ -82,7 +82,7 @@ function deletePdf() {
         if (err) return console.log(err);
         console.log('old file deleted successfully');
       })
-    };
+    }
   });
 }
 
@@ -159,12 +159,12 @@ function createPdf(request,outputFile) {
     .image(rank3, 167, 420, {
       scale: .14,
       keepAspectRatio: true
-    })
+    });
 
   // 9 - Readiness for Transformation
   var lineDims;
   var readiness = request.body.financePrep;
-  if (request.body.organizationLevel = "CHRO or Senior HR Professional") {
+  if (request.body.organizationLevel === "CHRO or Senior HR Professional") {
     switch (readiness) {
       case "Very prepared, have a structured roadmap": //brown
         lineDims = [
@@ -237,7 +237,7 @@ function createPdf(request,outputFile) {
       color: 'blue',
       width: 1,
       dash: [10, 3]
-    })
+    });
 
   //10 Competencies and skills
   var compAndSkills = request.body.compAndSkills;
@@ -258,7 +258,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Intelligence":
           pdfDoc.
@@ -273,7 +273,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Creative":
           pdfDoc.
@@ -288,7 +288,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Digital":
           pdfDoc.
@@ -303,7 +303,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Emotional Intelligence":
           pdfDoc.
@@ -318,7 +318,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Vision":
           pdfDoc.
@@ -333,7 +333,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Experience":
           pdfDoc.
@@ -348,7 +348,7 @@ function createPdf(request,outputFile) {
               textAlign: 'center',
               padding: 0
             },
-          })
+          });
           break;
         case "Others":
           console.log(val);
@@ -367,43 +367,43 @@ function createPdf(request,outputFile) {
         pdfDoc.image(tick, 325, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       case 'Finance technology experts':
         pdfDoc.image(tick, 360, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       case 'Cross-geographic/cross-cultural experience':
         pdfDoc.image(tick, 395, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       case 'Emerging reporting platforms e.g. Tableau':
         pdfDoc.image(tick, 432, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       case 'Data mining and analytics':
         pdfDoc.image(tick, 470, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       case 'Business Partnering':
         pdfDoc.image(tick, 503, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       case 'Decision support':
         pdfDoc.image(tick, 540, 365, {
           scale: 0.2,
           keepAspectRatio: true
-        })
+        });
         break;
       default:
         // code block
@@ -465,7 +465,7 @@ function sendEmail(emailId,name,outputFilePath) {
 
   transport.sendMail(message, function(err, info) {
     if (err) {
-      console.log(err)
+      console.log(err);
     } else {
       console.log(info);
     }
