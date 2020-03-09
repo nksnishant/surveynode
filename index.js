@@ -91,8 +91,26 @@ function persistSurvey(input){
   Result.create({
     sector: input.industry,
     name: input.Name,
-  }).catch(Sequelize.ValidationError, function(err) {
+    org: input.Organization,
+    title: input.Title,
+    phone: input.Phone,
+    email: input.Email,
+    orgLevel: input.organizationLevel,
+    turnover: input.annualTurnover,
+    employees: input.totalEmployees,
+    interests: JSON.stringify(input.interest),
+    priorities: JSON.stringify(input.priorities),
+    transformation: JSON.stringify(input.financeTrans),
+    factors: JSON.stringify(input.externalFactors),
+    aspects: JSON.stringify(input.financeAspects),
+    preparedness: input.financePrep,
+    competencies: JSON.stringify(input.compAndSkills),
+    financeSkills: JSON.stringify(input.financeSkills),
+    skillGaps: JSON.stringify(input.financeSkillGaps)
+  }).catch(function(err) {
     console.log(err);
+  }).then(function (item) {
+    console.log(item.id);
   });
 }
 

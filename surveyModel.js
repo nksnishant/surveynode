@@ -37,7 +37,51 @@ module.exports = function(sequelize, DataTypes){
         },
         orgLevel: {
             type: DataTypes.ENUM,
-            values: ['CFO'],
+            values: ['CFO', 'CHRO or Senior HR Professional', 'Senior Finance Professional(Finance Head,VP,Director and above)'],
+            allowNull: false
+        },
+        turnover: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        employees: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        interests: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        priorities:{
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        transformation: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        factors: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        aspects: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        preparedness: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        competencies: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        financeSkills: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        skillGaps: {
+            type: DataTypes.STRING,
             allowNull: false
         }
     })
