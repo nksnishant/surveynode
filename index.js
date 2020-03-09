@@ -4,11 +4,10 @@ const HummusRecipe = require('hummus-recipe');
 const nodemailer = require('nodemailer');
 
 var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var bodyParser = require('body-parser');
+const session = require('express-session');
+const bodyParser = require('body-parser');
 
-const {Result} = require('./surveyModel.js');
-
+const { Sequelize, DataTypes } = require('sequelize');
 // For debugging:
 // pry = require('pryjs');
 
@@ -22,6 +21,17 @@ let transport = nodemailer.createTransport({
 });
 
 const app = express();
+
+const sequelize = new Sequelize('ceo', 'root', '', {
+  dialect: 'mysql',
+  dialectOptions: {connectTimeout: 1000}
+});
+
+const ResultModel = require("./surveyModel.js");
+const Result = ResultModel(sequelize, DataTypes);
+sequelize.sync({ force: true }).then(() => {
+  console.log('Database & tables created!');
+});
 
 const sess = {
   secret: 'american ninja',
@@ -63,6 +73,7 @@ app.post('/', function(request, response, next) {
   // eval(pry.it);
   // deletePdf();
 
+  persistSurvey(request.body);
   createPdf(request,outputFile);
 
   sendEmail(request.body.Email,request.body.Name,outputFile);
@@ -75,6 +86,15 @@ app.post('/', function(request, response, next) {
   response.sendFile(outputFile);
 
 });
+
+function persistSurvey(input){
+  Result.create({
+    sector: input.industry,
+    name: input.Name,
+  }).catch(Sequelize.ValidationError, function(err) {
+    console.log(err);
+  });
+}
 
 
 function deletePdf() {
