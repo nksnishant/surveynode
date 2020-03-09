@@ -6,6 +6,10 @@ const nodemailer = require('nodemailer');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
+
+const {Result} = require('./surveyModel.js');
+
+// For debugging:
 // pry = require('pryjs');
 
 let transport = nodemailer.createTransport({
