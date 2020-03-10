@@ -290,7 +290,7 @@ var json = {
           type: "matrix",
           name: "compAndSkills",
           isRequired: debug == undefined ? true : debug,
-          title: "What competencies and skills would be most critical for job success of senior Finance professionals in 2030 and beyond?",
+          title: "How critical would the following competencies and skills be for job success of senior Finance professionals in 2030 and beyond?",
           columns: [{
               value: "Not Critical",
               text: "Not Critical"
@@ -341,7 +341,7 @@ var json = {
         {
           type: "checkbox",
           name: "financeSkills",
-          title: "What skills would you place emphasis on building/developing, at each of the following stages, for successful Finance professionals of the future?",
+          title: "What skills would you place emphasis on building/developing for successful Finance professionals of the future?",
           hasSelectAll: true,
           isRequired: debug == undefined ? true : debug,
           hasOther: true,
@@ -366,7 +366,7 @@ var json = {
         {
           type: "checkbox",
           name: "financeSkillGaps",
-          title: "What talent and skill gaps do you foresee in Finance function in the coming years? How critical are these for future success?",
+          title: "What talent and skill gaps do you foresee in Finance function in the coming years?",
           hasSelectAll: true,
           isRequired: debug == undefined ? true : debug,
           hasOther: true,
@@ -374,12 +374,12 @@ var json = {
           choices: [
             "Data scientists",
             "Finance technology experts",
-            "Audit, Assurance and Advisory",
             "Cross-geographic/cross-cultural experience",
             "Emerging reporting platforms e.g. Tableau",
             "Data mining and analytics",
             "Business Partnering",
-            "Decision support"
+            "Decision support",
+            "Others"
           ]
         },
       ]
