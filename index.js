@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 
 const config = require("./config");
 
-
+console.log(config.mailconn);
 let transport = nodemailer.createTransport(config.mailconn);
 
 const {
@@ -65,10 +65,12 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(request, response, next) {
+  console.log("Control in index.js");
   console.log(JSON.stringify(request.body));
   console.log(request.session.id);
 
   const outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
+  // const outputFile = __dirname + "/outfiles/output.pdf";
   // eval(pry.it);
   // deletePdf();
 
@@ -86,6 +88,7 @@ app.post("/", function(request, response, next) {
   response.setHeader("Content-type", "application/pdf");
 
   response.sendFile(outputFile);
+  console.log("Control in index.js ------ 2");
 });
 
 function persistSurvey(input) {

@@ -17,7 +17,7 @@ const config = convict({
     arg: "port"
   },
   mailconn: {
-    mailhost: process.env.MAIL_HOST || "smtp.mailtrap.io",
+    host: process.env.MAIL_HOST || "smtp.mailtrap.io",
     port: process.env.MAIL_PORT || 2525,
     auth: {
       user: process.env.AUTH_USER || "9c8420a170a4df",
