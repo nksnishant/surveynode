@@ -41,35 +41,35 @@ module.exports = function(sequelize, DataTypes){
             allowNull: false
         },
         turnover: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         employees: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         interests: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         priorities:{
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         transformation: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         factors: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         aspects: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         preparedness: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         competencies: {
@@ -77,11 +77,11 @@ module.exports = function(sequelize, DataTypes){
             allowNull: false
         },
         financeSkills: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         },
         skillGaps: {
-            type: DataTypes.STRING,
+            type: DataTypes.BLOB,
             allowNull: false
         }
     })
