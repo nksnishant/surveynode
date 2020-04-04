@@ -67,7 +67,7 @@ app.get("/", function (req, res) {
 //Main method
 app.post("/", function (request, response, next) {
   console.log(JSON.stringify(request.body));
-  console.log(request.session.id);
+  // console.log(request.session.id);
 
   const outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
   // const outputFile = __dirname + "/outfiles/output.pdf";

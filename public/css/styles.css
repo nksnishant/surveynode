@@ -1,15 +1,14 @@
-
 #surveyComplete,
 #surveyNext,
 #surveyPrev {
-    color: #1ab394;
+  color: #1ab394;
 }
 
 .sv-page__title {
   font-size: 1.2em;
 }
 
-#header{
+#header {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   display: block;
@@ -17,12 +16,7 @@
   cursor: default;
 }
 
-headerText{
+headerText {
   font-size: 1em;
   text-align: justify;
-}
-
-p {
-  /* text-align: justify;
-  display: inline; */
 }
