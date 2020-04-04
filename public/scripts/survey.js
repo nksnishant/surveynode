@@ -10,7 +10,7 @@ Survey.FunctionFactory.Instance.register(
   CustomEmailValidator
 );
 
-Survey.StylesManager.applyTheme("modern");
+Survey.StylesManager.applyTheme("darkblue");
 
 //true means fields become required
 var debug = true;
@@ -520,9 +520,9 @@ survey.onComplete.add(function (result) {
 
 function doOnCurrentPageChanged(survey) {
   if (!survey.isFirstPage) {
-    $("#header").hide();
+    $("#headerContent").hide();
   } else {
-    $("#header").show();
+    $("#headerContent").show();
   }
 }
 
