@@ -68,9 +68,6 @@ app.get("/", function (req, res) {
 app.post("/", function (request, response, next) {
   console.log(JSON.stringify(request.body));
   console.log(request.session.id);
-  request.body = JSON.parse(
-    '{"industry":"Education","annualTurnover":"5,001-10,000","totalEmployees":"751-1,000","organizationLevel":"CFO","interest":["What the Finance function needs to gear up for 2030 and beyond","How to be the Next-Gen CFO"],"priorities":["business","harmonization","advisory"],"financeTrans":["advisoryCapabilities","governance","adoption"],"externalFactors":["solutions","volatility","development"],"financeAspects":["Corporate Reporting","Strategic Planning and Performance Management","Audit and Assurance"],"financePrep":"Very prepared, have a structured roadmap","compAndSkills":["Intelligence","Creative","Technical skills and Ethics","Digital","Emotional Intelligence","Vision","Experience"],"financeSkills":["Ethics and Professionalism","Commercial Acumen","Audit, Assurance and Advisory","Corporate and Business Reporting","Financial Management","Governance, Risk and Control","Leadership and Management","Stakeholder Relationship Management","Strategy, Technology and Innovation","Sustainable Management Accounting","Tax Advisory","Communication Skills","Presentation Skills","Personal Brand and presence"],"financeSkillGaps":["Data scientists","Finance technology experts","Cross-geographic/cross-cultural experience","Emerging reporting platforms e.g. Tableau","Data mining and analytics","Business Partnering","Decision support","Others"],"Name":"Obi-wan Kenobi","Organization":"Jedi Inc","Title":"Padawan Trainer","Phone":"12321321","Email":"dnsbfd@djnsfbjds.com"}'
-  );
 
   const outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
   // const outputFile = __dirname + "/outfiles/output.pdf";
