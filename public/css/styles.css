@@ -35,26 +35,27 @@ div {
 
 .acca {
   float: left;
-  width: 15%;
-  padding-top: 10px;
-  padding-left: 10px;
+  min-width: 80px;
+  max-width: 4%;
+  padding: 10px;
 }
 
 .shrm {
   float: right;
-  width: 8%;
-  padding-top: 10px;
-  padding-right: 10px;
+  min-width: 100px;
+  max-width: 7%;
+  padding: 10px;
 }
 
 .header h1 {
   font-family: "Oswald", sans-serif;
   text-align: center;
   position: relative;
+  padding: 10px;
 }
 
 .header {
-  padding: 10px 10px;
+  /* padding: 14px 14px; */
   text-align: center;
   color: #000000;
   font-family: "Nunito", sans-serif;
@@ -62,7 +63,8 @@ div {
 
 .headerText {
   font-size: 1em;
-  text-align: justify;
-  padding: 10px;
+  text-align: left;
+  padding: 14px;
   font-family: "Nunito", sans-serif;
+  width: 98%;
 }
