@@ -19,7 +19,6 @@ module.exports = function createPdf(request, outputFile) {
       // align: 'left top',
       textBox: {
         width: 300,
-        textAlign: "left top",
         padding: 0,
       },
     })
@@ -31,14 +30,13 @@ module.exports = function createPdf(request, outputFile) {
       flow: true,
       textBox: {
         width: 500,
-        textAlign: "left bottom",
+        textAlign: "left",
         padding: 0,
-        lineHeight: 15,
+        lineHeight: 20,
       },
     })
     .text(request.body.Organization, {
       bold: true,
-      fontSize: 12,
     })
     .text(
       "   |   " +
@@ -49,10 +47,9 @@ module.exports = function createPdf(request, outputFile) {
         request.body.totalEmployees,
       {
         bold: false,
-        fontSize: 10,
+        flow: false,
       }
-    )
-    .text("", { flow: false });
+    );
 
   // Interested in
   if (request.body.interest[0]) {
