@@ -36,27 +36,26 @@ div {
 .acca {
   float: left;
   width: 15%;
-  vertical-align: center;
+  padding-top: 10px;
   padding-left: 10px;
 }
 
 .shrm {
   float: right;
-  width: 10%;
-  vertical-align: center;
+  width: 8%;
+  padding-top: 10px;
   padding-right: 10px;
 }
 
 .header h1 {
   font-family: "Oswald", sans-serif;
   text-align: center;
+  position: relative;
 }
 
 .header {
   padding: 10px 10px;
   text-align: center;
-  vertical-align: center;
-  /* background: #f2f2f2; */
   color: #000000;
   font-family: "Nunito", sans-serif;
 }

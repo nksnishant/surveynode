@@ -18,8 +18,6 @@ var debug = true;
 var json = {
   pages: [
     {
-      title:
-        "How is your organization gearing up? Take the survey now and get a copy of the study report.",
       questions: [
         {
           type: "dropdown",
@@ -53,7 +51,7 @@ var json = {
           isRequired: debug == undefined ? true : debug,
           hasNone: true,
           colCount: 4,
-          choices: ["<1.000", "1,000-5,000", "5,001-10,000", ">10,000"],
+          choices: ["<1,000", "1,000-5,000", "5,001-10,000", ">10,000"],
         },
         {
           type: "dropdown",
@@ -102,12 +100,12 @@ var json = {
           validators: [
             {
               type: "expression",
-              text: "Please select at least three responses.",
+              text: "Please drag and drop at least three options.",
               expression: "{priorities.length} >= 3",
             },
           ],
           title:
-            "What are the key priorities for your organization's finance function over the next few years? <br> *Select minimum three options and place them in rank.*",
+            "What are the key priorities for your organization's finance function over the next few years? <br> *Drag and drop at least three choices in their order of importance.*",
           choices: [
             {
               value: "advisory",
@@ -154,12 +152,12 @@ var json = {
           validators: [
             {
               type: "expression",
-              text: "Please select at least three responses.",
+              text: "Please drag and drop at least three options.",
               expression: "{financeTrans.length} >= 3",
             },
           ],
           title:
-            "What transformation in Finance function do you foresee over next few years for effectively facilitating and successfully delivering these priorities? <br> *Select minimum three options and place them in rank.*",
+            "What transformation in Finance function do you foresee over next few years for effectively facilitating and successfully delivering these priorities? <br> *Drag and drop at least three choices in their order of importance.*",
           choices: [
             {
               value: "adoption",
@@ -205,12 +203,12 @@ var json = {
           validators: [
             {
               type: "expression",
-              text: "Please select at least three responses.",
+              text: "Please drag and drop at least three options.",
               expression: "{externalFactors.length} >= 3",
             },
           ],
           title:
-            "What external factors will have the most influence on the transformation aspects? <br> *Select minimum three options and place them in rank.*",
+            "What external factors will have the most influence on the transformation aspects? <br> *Drag and drop at least three choices in their order of importance.*",
           choices: [
             {
               value: "development",
@@ -255,12 +253,12 @@ var json = {
           validators: [
             {
               type: "expression",
-              text: "Please select at least three responses.",
+              text: "Please drag and drop at least three options.",
               expression: "{financeAspects.length} >= 3",
             },
           ],
           title:
-            "Which aspects of Finance function would be most impacted by the transformation? <br> *Select minimum three options and place them in rank.*",
+            "Which aspects of Finance function would be most impacted by the transformation? <br> *Drag and drop at least three choices in their order of importance.*",
           choices: [
             {
               value: "Audit and Assurance",
@@ -318,12 +316,12 @@ var json = {
           validators: [
             {
               type: "expression",
-              text: "Please select at least three responses.",
+              text: "Please drag and drop at least three options.",
               expression: "{compAndSkills.length} >= 3",
             },
           ],
           title:
-            "How critical would the following competencies and skills be for job success of senior Finance professionals in 2030 and beyond? <br> *Select minimum three options and place them in rank.*",
+            "How critical would the following competencies and skills be for job success of senior Finance professionals in 2030 and beyond? <br> *Drag and drop at least three choices in their order of importance.*",
           choices: [
             {
               value: "Technical skills and Ethics",
@@ -452,8 +450,7 @@ var json = {
           validators: [
             {
               type: "expression",
-              text:
-                "Please enter a valid email address. Personal email addresses are not allowed.",
+              text: "Please enter a valid company email ID.",
               expression: "CustomEmailValidator({Email})",
             },
           ],

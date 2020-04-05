@@ -5,7 +5,6 @@ module.exports = function createPdf(request, outputFile) {
 
   //Intro section
   const pdfDoc = new HummusRecipe("input.pdf", outputFile);
-  console.log(__dirname + "/public/fonts/Avenir.ttc");
   pdfDoc.registerFont("Avenir", __dirname + "/public/fonts/Avenir.ttc");
   pdfDoc.registerFont("Fyra", __dirname + "/public/fonts/fyra.otf");
 
@@ -24,31 +23,36 @@ module.exports = function createPdf(request, outputFile) {
         padding: 0,
       },
     })
+    .text(request.body.Title + ", ", 30, 120, {
+      color: "#000000",
+      fontSize: 10,
+      bold: false,
+      font: "Avenir",
+      flow: true,
+      textBox: {
+        width: 500,
+        textAlign: "left bottom",
+        padding: 0,
+        lineHeight: 15,
+      },
+    })
+    .text(request.body.Organization, {
+      bold: true,
+      fontSize: 12,
+    })
     .text(
-      request.body.Title +
-        ", " +
-        request.body.Organization +
-        "   |   " +
+      "   |   " +
         request.body.industry +
-        "   |   Annual Turnover : " +
+        "   |   Annual Turnover (in Rs Crores): " +
         request.body.annualTurnover +
         "   |   Employees : " +
         request.body.totalEmployees,
-      30,
-      115,
       {
-        color: "#000000",
-        fontSize: 10,
         bold: false,
-        font: "Avenir",
-        // align: 'left top',
-        textBox: {
-          width: 900,
-          textAlign: "left top",
-          padding: 0,
-        },
+        fontSize: 10,
       }
-    );
+    )
+    .text("", { flow: false });
 
   // Interested in
   if (request.body.interest[0]) {
@@ -103,54 +107,54 @@ module.exports = function createPdf(request, outputFile) {
 
   pdfDoc
     //Question 1
-    .image(kp11, 27, 336, {
-      scale: 0.2,
+    .image(kp11, 26, 336, {
+      scale: 0.133,
       keepAspectRatio: true,
     })
-    .image(kp12, 127, 336, {
-      scale: 0.2,
+    .image(kp12, 94, 336, {
+      scale: 0.133,
       keepAspectRatio: true,
     })
-    .image(kp13, 227, 336, {
-      scale: 0.2,
+    .image(kp13, 162, 336, {
+      scale: 0.133,
       keepAspectRatio: true,
     })
     //ranks
-    .image(rank1, 33, 342, {
-      scale: 0.2,
+    .image(rank1, 30, 340, {
+      scale: 0.14,
       keepAspectRatio: true,
     })
-    .image(rank2, 133, 342, {
-      scale: 0.2,
+    .image(rank2, 98, 340, {
+      scale: 0.14,
       keepAspectRatio: true,
     })
-    .image(rank3, 233, 342, {
-      scale: 0.2,
+    .image(rank3, 166, 340, {
+      scale: 0.14,
       keepAspectRatio: true,
     })
     //Question 2
-    .image(tf11, 260, 465, {
-      scale: 0.14,
+    .image(tf11, 258, 465, {
+      scale: 0.145,
       keepAspectRatio: true,
     })
-    .image(tf12, 330, 465, {
-      scale: 0.14,
+    .image(tf12, 331, 465, {
+      scale: 0.145,
       keepAspectRatio: true,
     })
-    .image(tf13, 400, 465, {
-      scale: 0.14,
+    .image(tf13, 404, 465, {
+      scale: 0.145,
       keepAspectRatio: true,
     })
     //ranks
-    .image(rank1, 264, 469, {
+    .image(rank1, 262, 469, {
       scale: 0.15,
       keepAspectRatio: true,
     })
-    .image(rank2, 334, 469, {
+    .image(rank2, 335, 469, {
       scale: 0.15,
       keepAspectRatio: true,
     })
-    .image(rank3, 404, 469, {
+    .image(rank3, 408, 469, {
       scale: 0.15,
       keepAspectRatio: true,
     });
@@ -234,7 +238,7 @@ module.exports = function createPdf(request, outputFile) {
     }
   }
   pdfDoc.line(lineDims, {
-    color: "blue",
+    color: "green",
     width: 1,
     dash: [10, 3],
   });
@@ -242,8 +246,8 @@ module.exports = function createPdf(request, outputFile) {
   // Competencies and skills
   let compAndSkills = request.body.compAndSkills;
   let textProps = {
-    // color: "#c55a11",
-    fontSize: 25,
+    color: "blue",
+    fontSize: 15,
     bold: false,
     font: "Fyra",
     align: "center center",

@@ -67,7 +67,10 @@ app.get("/", function (req, res) {
 //Main method
 app.post("/", function (request, response, next) {
   console.log(JSON.stringify(request.body));
-  // console.log(request.session.id);
+  console.log(request.session.id);
+  // request.body = JSON.parse(
+  //   '{"industry":"FMCG","annualTurnover":"5,001-10,000","totalEmployees":"<500","organizationLevel":"CHRO or Senior HR Professional","interest":["How to be the Next-Gen CFO"],"priorities":["harmonization","business","advisory"],"financeTrans":["adoption","governance","advisoryCapabilities"],"externalFactors":["solutions","volatility","development"],"financeAspects":["Corporate Reporting","Financial Management","Audit and Assurance"],"financePrep":"Too early/ have other key priorities","compAndSkills":["Technical skills and Ethics","Intelligence","Creative"],"Name":"Obi-wan Kenobi jhsdg fdsfhgds","Organization":"h dfds dsf dsjfhdsj dsfhdsjfhsdh","Title":"j sdhfjdsf jsdhgf"}'
+  // );
 
   const outputFile = __dirname + "/outfiles/" + request.session.id + ".pdf";
   // const outputFile = __dirname + "/outfiles/output.pdf";
